@@ -7,7 +7,7 @@ install:
   - gem install rubocop
 
 script:
-  - rubocop lib/image_size_linter.rb
+  - rubocop lib/image_checker.rb
 
 deploy:
   provider: rubygems
