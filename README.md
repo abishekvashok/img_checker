@@ -1,6 +1,6 @@
 # img_checker
 
-[![Build Status](https://travis-ci.org/Abhi2424shek/ImageSizeLinter.svg)](https://travis-ci.org/Abhi2424shek/ImageSizeLinter)
+[![Build Status](https://travis-ci.org/Abhi2424shek/img_checker.svg)](https://travis-ci.org/Abhi2424shek/img_checker)
 
 Simple Linter to verify image sizes.
 
