@@ -6,7 +6,9 @@ Simple Linter to verify image sizes.
 
 ### How to use it?
 Require the gem to be there:
-`require ImageSizeLinter`
+`require img_checker`
+or place it on your Gemfile
+`gem 'img_checker'`
 
 Then just put an img_config.yml at the root of the project.
 
