@@ -1,0 +1,7 @@
+- directory: ./hello/**/*.*
+  width: 240
+  height: 240
+
+- directory: ./helo/**/*.*
+  width: 240
+  height: 240

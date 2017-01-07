@@ -1,0 +1,16 @@
+language: ruby
+
+rvm:
+  - 2.3.3
+
+install:
+  - gem install rubocop
+
+script:
+  - rubocop lib/image_size_linter.rb
+
+deploy:
+  provider: rubygems
+  api_key: e8e57f3ca1ff9a79fa3d17ab2858273f
+  gemspec: img_checker.gemspec
+  gem: img_checker
