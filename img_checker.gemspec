@@ -11,4 +11,5 @@ Gem::Specification.new do |s|
   s.license     = 'GPL-3.0'
   s.add_runtime_dependency "fastimage", [">= 2.0.0"]
   s.add_development_dependency "fastimage", [">= 2.0.0"]
+  s.executables << 'img_checker'
 end
