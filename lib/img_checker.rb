@@ -16,7 +16,7 @@
 # You should have received a copy of the GNU General Public License
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #
-class ImageSizeLinter
+class ImgChecker
   def initialize(config_file)
     print 'Starting Image Checker,'
     print ' authored by Abishek V Ashok "for" FOSSASIA with love'
@@ -74,7 +74,7 @@ config_file = './img_config.yml'
 
 # Check images only if the config file exists or exit throwing out an error
 if File.exist?(config_file)
-  checker = ImageSizeLinter.new config_file
+  checker = ImgChecker.new config_file
   checker.ok?
 else
   abort 'Critical Error, No config file found. Please put up a config file'
