@@ -1,0 +1,6 @@
+release:
+  script: |
+    rm -rf *.gem
+    sed -i "s/1.0/${tag}/g" img_checker.gemspec
+    gem build img_checker.gemspec
+    gem push *.gem --config-file ./api_config.yml
