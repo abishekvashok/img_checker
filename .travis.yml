@@ -7,4 +7,5 @@ install:
   - gem install rubocop
 
 script:
-  - rubocop lib/image_checker.rb
+  - rubocop lib/img_checker.rb
+
