@@ -25,7 +25,7 @@ This is the basic structure for a img_config entries:
    height: <Max height for the images in the above directory>
 ```
 
-[Example](https://github.com/Abhi2424shek/ImageSizeLinter/blob/master/lib/img_config.yml)
+[Example](https://github.com/Abhi2424shek/ImageSizeLinter/blob/master/img_config.yml)
 
 **Note**: The image sizes must be specified in pixels although the units shouldn't be specified.
 
