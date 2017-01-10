@@ -1,0 +1,7 @@
+- directory: ./test/test-images/test-img-1.png
+  width: 640
+  height: 480
+
+- directory: ./test-images/test-img-2.png
+  width: 468
+  height: 60
