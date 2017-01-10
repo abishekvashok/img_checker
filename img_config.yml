@@ -1,0 +1,9 @@
+# A sample config file for img_checker
+
+- directory: ./hello/**/*.*
+  width: 360
+  height: 240
+
+- directory: ./hello/**/*.*
+  width: 240
+  height: 360
