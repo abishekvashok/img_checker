@@ -5,6 +5,7 @@ rvm:
 
 install:
   - gem install rubocop
+  - gem install fastimage
 
 script:
   - rubocop lib/img_checker.rb
