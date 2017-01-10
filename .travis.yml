@@ -8,5 +8,6 @@ install:
 
 script:
   - rubocop lib/img_checker.rb
-  - ruby ./lib/img_checker.rb
+  - cd ./lib
+  - ruby img_checker.rb
 
