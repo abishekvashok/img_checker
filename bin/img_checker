@@ -1,4 +1,4 @@
 #!/usr/bin/env ruby
 
 require 'img_checker'
-img.hi(ARGV[0])
+Img.hi?
