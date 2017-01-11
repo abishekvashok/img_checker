@@ -1,3 +1,3 @@
 module VERSION
-  STRING = '1.0'.freeze
+  STRING = '1.3'.freeze
 end
