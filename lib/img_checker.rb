@@ -20,7 +20,7 @@
 require 'img_checker/img_linter'
 config_file = './img_config.yml'
 
-class img
+class ImgC
 def hi?
 # Check images only if the config file exists or exit throwing out an error
   if File.exist?(config_file)
