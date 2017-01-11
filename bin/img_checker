@@ -1,4 +1,3 @@
 #!/usr/bin/env ruby
 
-require 'img_checker'
-ImgC.hi?
+require_relative '../lib/img_checker.rb'
