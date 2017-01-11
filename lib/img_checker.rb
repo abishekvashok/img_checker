@@ -1,5 +1,5 @@
-
 # img_checker ruby gem
+
 # This gem checks for images which exceept the specified limit in the
 # img_config.yml file.
 # Authored by Abishek V Ashok and Ankit R Gadiya of FOSSASIA
@@ -16,18 +16,13 @@
 #
 # You should have received a copy of the GNU General Public License
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
-#
-require 'img_checker/img_linter'
-config_file = './img_config.yml'
 
-class ImgC
-  def hi?
-  # Check images only if the config file exists or exit throwing out an error
-    if File.exist?(config_file)
-      checker = ImgChecker.new config_file
-      checker.ok?
-    else
-      abort 'Critical Error, No config file found. Please put up a config file'
-    end
-  end
+CONFIG_FILE = './img_config.yml'.freeze
+
+if File.exist?(CONFIG_FILE)
+  require_relative '../lib/img_checker/img_checker.rb'
+  checker = ImgChecker.new CONFIG_FILE
+  checker.ok?
+else
+  abort 'Critical Error: img_config.yml not found. Please add to the current directory.' # rubocop: disable Metrics/LineLength
 end

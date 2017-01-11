@@ -18,9 +18,9 @@
 #
 class ImgChecker
   def initialize(config_file)
-    print 'Starting Image Checker,'
-    print ' authored by Abishek V Ashok "for" FOSSASIA with love'
-    puts "Improvements by Robby O'Connor during GCI 2016"
+    require_relative 'version'
+    puts "Starting Image Checker version #{VERSION::STRING}"
+
     # Initialize the config file
     require 'yaml'
     @config = YAML.load(File.open(config_file))
@@ -45,12 +45,11 @@ class ImgChecker
     valid_sizes = true
     # For each direcotry hash do
     @config.each do |dir_config|
-      # Get the directory pathonly from the array
+      # Get the directory path, height and width from the config file
       directory = Dir[dir_config['directory']]
       height = dir_config['height']
       width = dir_config['width']
       directory.each do |image|
-        # Now we will use the other data available in the dir_config array
         valid_sizes = false unless check_dimensions?(image, width, height)
       end
     end
