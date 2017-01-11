@@ -21,13 +21,13 @@ require 'img_checker/img_linter'
 config_file = './img_config.yml'
 
 class ImgC
-def hi?
-# Check images only if the config file exists or exit throwing out an error
-  if File.exist?(config_file)
-    checker = ImgChecker.new config_file
-    checker.ok?
-  else
-    abort 'Critical Error, No config file found. Please put up a config file'
+  def hi?
+  # Check images only if the config file exists or exit throwing out an error
+    if File.exist?(config_file)
+      checker = ImgChecker.new config_file
+      checker.ok?
+    else
+      abort 'Critical Error, No config file found. Please put up a config file'
+    end
   end
-end
 end
