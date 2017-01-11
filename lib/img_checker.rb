@@ -17,7 +17,7 @@
 # You should have received a copy of the GNU General Public License
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #
-require 'img_checker/img_checker'
+require 'img_checker/img_linter'
 config_file = './img_config.yml'
 
 # Check images only if the config file exists or exit throwing out an error
