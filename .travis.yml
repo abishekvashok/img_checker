@@ -6,6 +6,7 @@ rvm:
 install:
   - gem install rubocop
   - gem install fastimage
+  - bundle install
 
 script:
   - rubocop lib/img_checker.rb
@@ -13,3 +14,5 @@ script:
   - gem install *.gem
   - cd test
   - img_checker
+  - cd ../
+  - bundle exec rspec spec
