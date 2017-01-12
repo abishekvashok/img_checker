@@ -1,9 +1,9 @@
 # Rsepc tests for img_checker ruby gem
 require 'img_checker/iimg_checker.rb'
 
-Rspec.describe ImgChecker, "This should check for images when the config file is parsed"
-  context "and checks the image dimensions"
-    it "and handles errors as well"
+Rspec.describe ImgChecker, "This should check for images when the config file is parsed" do
+  context "and checks the image dimensions" do
+    it "and handles errors as well" do
       CONFIG_FILE = './img_config.yml'.freeze
       if File.exist?(CONFIG_FILE)
         require_relative '../lib/img_checker/img_checker.rb'
