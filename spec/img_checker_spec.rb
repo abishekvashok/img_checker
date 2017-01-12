@@ -1,5 +1,5 @@
 # Rsepc tests for img_checker ruby gem
-require 'img_checker/iimg_checker.rb'
+require 'img_checker/img_checker.rb'
 
 Rspec.describe ImgChecker, "This should check for images when the config file is parsed" do
   context "and checks the image dimensions" do
