@@ -25,7 +25,7 @@ This is the basic structure for a img_config entries:
    height: <Max height for the images in the above directory>
 ```
 
-[Example](https://github.com/Abhi2424shek/ImageSizeLinter/blob/master/tests/img_config.yml)
+[Example](https://github.com/Abhi2424shek/img_checker/blob/master/test/img_config.yml)
 
 **Note**: The image sizes must be specified in pixels although the units shouldn't be specified.
 
@@ -36,6 +36,6 @@ If you only want to scan specific files then change `./foo/*.*` to `./foo/*.exte
 _development branch_: All development goes into this branch, if you want to make a PR, you should make it to this branch.
 _master branch_: The master branch contqins stable releases and is a protected branch when there is a release we update the code from development to this branch and it isnfrom this branch that a release is made.
 
-## Maintainers and contact information-
+## Maintainers and contact information
 - Abishek V Ashok (abhi2424shekvashok@gmail.com)
 - Ankit R Gadiya
