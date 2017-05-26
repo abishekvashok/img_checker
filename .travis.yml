@@ -16,3 +16,8 @@ script:
   - gem build img_checker.gemspec
   - gem install *.gem
   - bundle exec rspec spec
+
+branches:
+  only:
+    - gh-pages
+    - /.*/
