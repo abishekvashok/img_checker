@@ -1,6 +1,10 @@
 architect:
-  - abhi2424shek
+  - abishekvashok
   - ankitrgadiya
+
+merge:
+  script:
+    - rm -rf *.gem
 release:
   script:
     - rm -rf *.gem
