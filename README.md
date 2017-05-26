@@ -2,6 +2,8 @@
 
 [![Build Status](https://travis-ci.org/Abhi2424shek/img_checker.svg)](https://travis-ci.org/Abhi2424shek/img_checker)
 [![Gem Version](https://badge.fury.io/rb/img_checker.svg)](https://badge.fury.io/rb/img_checker)
+[![Github All Releases](https://img.shields.io/github/downloads/abishekvashok/img_checker/total.svg)]()
+
 
 Simple Linter to verify image sizes.
 
